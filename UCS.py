@@ -18,13 +18,14 @@ def ucs(graph, node):
     visited = [] # Array to keep track of visited nodes.
     queue = [] # Initialize a queue
     cost = 0 # Initialize cost
-    # create initial node 'A' : 0
+    # create initial node {'A' : 0}
     visited.append(node)
     queue.append(node)
     
     while queue:
-        #so sanh tat cost all queue => pop phan tu trong queue be nhat 
-        # Result = queue.pop(phan tu be nhat)
+        # so sanh tat cost all queue 
+        # Neu tat ca bang nhau => Result = queue.pop(0)
+        # else Result = queue.pop(phan tu be nhat)
         print(Result, end=" ")
 
         # for Neighbour in graph[Result][0]:
