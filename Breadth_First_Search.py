@@ -22,9 +22,9 @@ graph = {
 # %% [markdown]
 # # Write BFS Algorithm code
 # %%
-visited = [] # Array to keep track of visited nodes.
-queue = [] # Initialize a queue
-def bfs(visited, graph, node):
+def bfs(graph, node):
+    visited = [] # Array to keep track of visited nodes.
+    queue = [] # Initialize a queue
     visited.append(node)
     queue.append(node)
     
@@ -36,4 +36,7 @@ def bfs(visited, graph, node):
             if Neighbour not in visited:
                 visited.append(Neighbour)
                 queue.append(Neighbour)
-bfs(visited, graph, 'A')
+bfs(graph, 'A')
+
+
+# %%
