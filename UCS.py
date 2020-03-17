@@ -13,3 +13,24 @@ graph = {
     'F' : [{'G': 3}],
     'G' : [{'E': 4}]
 }
+
+def ucs(graph, node):
+    visited = [] # Array to keep track of visited nodes.
+    queue = [] # Initialize a queue
+    cost = 0 # Initialize cost
+    # create initial node 'A' : 0
+    visited.append(node)
+    queue.append(node)
+    
+    while queue:
+        #so sanh tat cost all queue => pop phan tu trong queue be nhat 
+        # Result = queue.pop(phan tu be nhat)
+        print(Result, end=" ")
+
+        # for Neighbour in graph[Result][0]:
+        #     if Neighbour not in visited:
+        #         visited.append(Neighbour) #Cost = CostOld + CostNew
+        #         queue.append(Neighbour) #Cost = CostOld + CostNew
+
+bfs(graph, 'A')
+
