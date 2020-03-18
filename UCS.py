@@ -14,7 +14,7 @@ graph = {
     'G' : [{'E': 4}]
 }
 
-def ucs(graph, node):
+def ucs(graph, node, destination):
     visited = [] # Array to keep track of visited nodes.
     queue = [] # Initialize a queue
     cost = 0 # Initialize cost
@@ -23,6 +23,7 @@ def ucs(graph, node):
     queue.append(node)
     
     while queue:
+        # So sanh node vs destination, if == print destionation
         # so sanh tat cost all queue 
         # Neu tat ca bang nhau => Result = queue.pop(0)
         # else Result = queue.pop(phan tu be nhat)
